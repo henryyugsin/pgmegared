@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Megared</title>
+  <link rel="stylesheet" href="prueba.css">
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check" onclick="ocultar()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+      <img src="./images/logo.jpg" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">SpeedTest</a></li>
+    </ul>
+  </nav>
+  <section class="promociones" id="promociones">
+    <div class="slider position"></div>
+  </section>
+
+  <section class="price">
+    <div class="price_element1">
+        <a href="#" class="price_cta1">NAVEGA A LA VELOCIDAD DE LA LUZ</a>
+    </div>
+    <div class="price_table">
+        <div class="price_element flex">
+            <p class="price_name">BASICO</p>
+            <h3 class="price_price">50 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">20 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+        <div class="price_element price_element--best flex">
+            <p class="price_name">PLUS</p>
+            <h3 class="price_price">80 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">25 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+        <div class="price_element flex">
+            <p class="price_name">DELUX</p>
+            <h3 class="price_price">100 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">30 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="">
+    <h2 class="subtitle"></h2>
+    <div class="price_table">
+        <div class="price_element flex">
+            <p class="price_name">XTREME</p>
+            <h3 class="price_price">125 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">35 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+        <div class="price_element price_element--best flex">
+            <p class="price_name">TURBO</p>
+            <h3 class="price_price">150 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">40 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+        <div class="price_element flex">
+            <p class="price_name">ULTRA</p>
+            <h3 class="price_price">200 Megas</h3>
+            <div class="price_items">
+                <p class="price_features">50 Dolares</p>
+                <p class="price_features">Fibra Optica</p>
+                <p class="price_features">Instalacion Gratis</p>
+                <p class="price_features">Aplica restriccciones</p>
+                <a href="#" class="price_cta">Contrata Ahora</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="equipos">
+        <div class="infoequipos">
+            <h1>Navega a la velocidad de la luz con la tecnologia de fibra optica + 5G</h1>
+        </div>
+        <center>
+            <img src="./images/redessociales.jpg" alt="" class="imagenservicios">
+        </center>
+    </section>
+  </main>
+
+  <main>
+    <section class="nuestrosservicios">
+        <div class="nuestrosservicios_table">
+            <div class="nuestrosservicios_element flex">
+                <h3 class="price_price">SOPORTE TECNICO</h3>
+                <p class="price_name">Grupo Megared dispone de un gran personal totalmente capacitado para brindar solucion de manera eficiente y rapida</p>
+            </div>
+            <div class="nuestrosservicios_element flex">
+                <h3 class="nuestrosservicios_price">FIBRA OPTICA</h3>
+                <p class="nuestrosservicios_name">Tecnologia FTTH, fibra optica hasta tu domicilio. La fibra optica garatinza una conexion veloz, segura y estable a internet</p>
+            </div>
+            <div class="nuestrosservicios_element flex">
+                <h3 class="nuestrosservicios_price">PRECIOS FIJOS</h3>
+                <p class="nuestrosservicios_name">Precios incluidos IVA, sin recargos adicionales. El valor de tu factura no tendra recargos adicionales por el servicio contratado</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+
+<script>
+  var i =0;
+  function ocultar(){
+    i=i+1;
+    if((i%2)==0){
+      document.getElementById('promociones').style.display='block';
+    }else{
+      document.getElementById('promociones').style.display='none';
+    }
+  }
+</script>
+
+</html>
