@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+:root{
+    --padding-container: 20px 0;
+    --color-title: #001A49;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /*Barra de Inicio*/
 *{
     padding: 0;
@@ -126,7 +134,28 @@ section{
     animation: animate 30s infinite linear;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
 }
-
+@keyframes animate {
+    25%{
+        background: url(./../images/promocion1.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(./../images/promocion2.jpg);
+        background-size: cover;
+    }
+    75%{
+        background: url(./../images/promocion2.jpg);
+        background-size: cover;
+    }
+    90%{
+        background-image: url(./../images/promocion3.jpg);
+        background-size: cover;
+    } 
+    100%{
+        background-image: url(./../images/promocion3.jpg);
+        background-size: cover;
+    } 
+}
 @media screen and (max-width:858px) {
     .promociones{
         background-color: #fffffff3;
@@ -140,15 +169,37 @@ section{
         text-align: center;  
     }
     .slider{
-        background: url(./../images/promocion1.jpg) no-repeat;
+        background: url(./../images/promocion1-telefono.jpg) no-repeat;
         background-size: cover;
         height: 100%;
         width: 350px;
         border-radius: 10px;
         animation: animate 30s infinite linear;
     }
+    @keyframes animate {
+        25%{
+            background: url(./../images/promocion1-telefono.jpg);
+            background-size: cover;
+        }
+        50%{
+            background: url(./../images/promocion2-telefono.jpg);
+            background-size: cover;
+        }
+        75%{
+            background: url(./../images/promocion2-telefono.jpg);
+            background-size: cover;
+        }
+        90%{
+            background-image: url(./../images/promocion3-telefono.jpg);
+            background-size: cover;
+        } 
+        100%{
+            background-image: url(./../images/promocion3-telefono.jpg);
+            background-size: cover;
+        } 
+    }
 }
-@keyframes animate {
+/*@keyframes animate {
     25%{
         background: url(./../images/promocion1.jpg);
         background-size: cover;
@@ -160,10 +211,8 @@ section{
     100%{
         background-image: url(./../images/promocion1.jpg);
         background-size: cover;
-        
     } 
-}
-
+}*/
 /*Seccion de Planes y Productos*/
 .subtitle{
     color: #000000;
@@ -194,17 +243,20 @@ section{
 .price_element1{
     margin-left: auto;
     margin-right: auto;
-    width: 400PX;
+    width: 70%;
     text-align: center;
-    background-color: #8d8dcd;
+    background-color: #ffffff;
     border-radius: 10px;
     height: 30PX;
+    text-decoration-style: dotted;
+    font-size: larger;
+
 }
 .price_element--best{
-    background-color: #ff7143;
+    background-color: #272c52;
     --color-plan:rgb(255 255 255 / 75%);
     --color-price:#fff;
-    --bg-cta:#9f3919;
+    --bg-cta:#325199;
     --color-cta: #fff;
     --color-items:#fff;
 }
@@ -241,13 +293,16 @@ section{
     background-color: var(--bg-cta);
     font-weight: 800;
     color: var(--color-cta);
-    font-size: large;
+    font-size: 30px;
 }
 
 @media screen and (max-width:858px) {
     .price{
         text-align: center;
         padding-top: 50PX;
+    }
+    .price_cta1{
+        font-size: 20px;
     }
 }
 
@@ -260,15 +315,15 @@ section{
 
 /*equipos */
 .equipos{
-    height: 800px;
+    height: 600px;
     padding: 50px;
 }
 .infoequipos{
     text-align: center;
 }
 .imagenservicios{
-    width: 950px;
-    height: 650px;
+    width: 650px;
+    height: 450px;
     text-align: center;
 }
 @media screen and (max-width:858px) {
@@ -285,11 +340,11 @@ section{
 
 /*nuestros servicios*/
 .nuestrosservicios{
-    height: 400px;
+    height: 440px;
     background-color: #1D293F;
 }
 .nuestrosservicios_table{
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5em;
@@ -319,7 +374,7 @@ section{
 }
 @media screen and (max-width:858px) {
     .nuestrosservicios{
-        height: 1050px;
+        height: 1150px;
     }
 }
 /*Mapa*/
@@ -385,4 +440,55 @@ section{
         padding: 35px 0px;
     }
 
+}
+/*Link de wssp*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #FFF;
+    background-color:#1ab152;
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+.my-float{
+	margin-top:16px;
+}
+.pulse{
+    animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation{
+    0%{
+        box-shadow: 0 0 0 0px #25d3604d rgba(0, 0, 0, 0.2);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+/*Sobre Nosotros*/
+.section{
+    background-color: #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 50%;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, .5);
+}
+.section img{
+    width: 200px;
+    border-radius: 30px;
 }

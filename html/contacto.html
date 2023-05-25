@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Megared</title>
+  <link rel="stylesheet" href="prueba.css">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check" onclick="ocultar()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+      <img src="./images/logo.jpg" alt="" class="logo">
+    </a>
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="nosotros">Nosotros</a></li>
+        <li><a href="contacto">Contacto</a></li>
+        <li><a href="speedytest">SpeedTest</a></li>
+        <li><a href="puntosdepago">Puntos de Pago</a></li>
+    </ul>
+  </nav>
+  
+</body>
+
+
+<script>
+  var i =0;
+  function ocultar(){
+    i=i+1;
+    if((i%2)==0){
+      document.getElementById('promociones').style.display='block';
+    }else{
+      document.getElementById('promociones').style.display='none';
+    }
+  }
+</script>
+
+</html>
