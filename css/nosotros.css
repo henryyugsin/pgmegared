@@ -15,7 +15,6 @@ body{
     list-style: none;
     box-sizing: border-box;
 }
-
 nav{
     background: #ffffff;
     height: 80px;
@@ -108,12 +107,9 @@ section{
     }
     #check:checked ~ ul{
         left: 0;
-        position: absolute;
-        
-    }
-    
+        position: absolute;   
+    }   
 }
-
 /*Pie de Pagina*/
 .pie-pagina{
     width: 100%;

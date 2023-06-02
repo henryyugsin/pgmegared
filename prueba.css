@@ -135,20 +135,24 @@ section{
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
 }
 @keyframes animate {
-    25%{
+    20%{
         background: url(./../images/promocion1.jpg);
         background-size: cover;
     }
-    50%{
+    40%{
+        background: url(./../images/promocion2.jpg);
+        background-size: cover;
+    }
+    60%{
         background: url(./../images/promocion2.jpg);
         background-size: cover;
     }
     75%{
-        background: url(./../images/promocion2.jpg);
-        background-size: cover;
-    }
-    90%{
         background-image: url(./../images/promocion3.jpg);
+        background-size: cover;
+    } 
+    90%{
+        background-image: url(./../images/promocion4.jpg);
         background-size: cover;
     } 
     100%{
@@ -322,7 +326,7 @@ section{
     text-align: center;
 }
 .imagenservicios{
-    width: 650px;
+    width: 750px;
     height: 450px;
     text-align: center;
 }

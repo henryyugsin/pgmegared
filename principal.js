@@ -28,11 +28,14 @@ app.get("/images/promocion2.jpg",(req,res)=>{
 app.get("/images/promocion3.jpg",(req,res)=>{
     res.status(200).sendFile(path.resolve(__dirname,'./images/promocion3.jpg'));
 });
+app.get("/images/promocion4.jpg",(req,res)=>{
+    res.status(200).sendFile(path.resolve(__dirname,'./images/promocion4.jpg'));
+});
 app.get("/images/nosotros.jpg",(req,res)=>{
     res.status(200).sendFile(path.resolve(__dirname,'./images/nosotros.jpg'));
 });
-app.get("/images/redessociales.jpg",(req,res)=>{
-    res.status(200).sendFile(path.resolve(__dirname,'./images/redessociales.jpg'));
+app.get("/images/servicios.jpg",(req,res)=>{
+    res.status(200).sendFile(path.resolve(__dirname,'./images/servicios.jpg'));
 });
 app.get("/images/logo-pie-pagina.jpg",(req,res)=>{
     res.status(200).sendFile(path.resolve(__dirname,'./images/logo-pie-pagina.jpg'));
