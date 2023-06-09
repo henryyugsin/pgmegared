@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+:root{
+    --padding-container: 20px 0;
+    --color-title: #001A49;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Personal*/
+.heropersonal{
+    width: 100%;
+    height: 8vh;
+    min-height: 100px;
+    max-height: 200px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.navpersonal{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_iniciopersonal{
+    width: 200px;
+    display:block;
+    margin:auto;
+}
+
+.personal{
+    text-align: center;
+}
+.personal_table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.personal_element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 530px;
+    padding: 40px;
+}
+.personal_element--best{
+    background-color: #95ff43;
+    --color-personal:#000000;
+}
+
+.personal_personal{
+    font-size: 1.3rem;
+    color: var(--color-personal);
+}
+
+.imagenpersonal{
+    width: 100%;
+    height: 8vh;
+    min-height: 200px;
+    max-height: 300px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #ffffff;
+}
+
+.imagennavpersonal{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_personal{
+    width: 200px;
+    display:block;
+    margin:auto;
+}
+
+.personalinfo{
+    text-align: center;
+}
+.personal_tableinfo{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.personal_elementinfo{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 40px;
+}
+.personal_element--bestinfo{
+    background-color: #9c9c9c;
+    --color-personal:#000000;
+}
+
+.personal_personalinfo{
+    font-size: 1.7rem;
+    color: var(--color-personal);
+}

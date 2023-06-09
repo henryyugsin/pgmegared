@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo Megared</title>
-  <link rel="stylesheet" href="prueba.css">
+  <link rel="stylesheet" href="./../css/contactanos.css">
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
   <script src="/socket.io/socket.io.js"></script>
@@ -28,8 +28,92 @@
         <li><a href="puntosdepago">Puntos de Pago</a></li>
     </ul>
   </nav>
-  
+  <div class="contenedor">
+    <div class="info">
+      <div class="correo">
+        <h3>Escribenos a nuestro email</h3>
+        <h6>servicioalcliente@grupomegared.net.ec</h6>
+      </div>
+      <div class="telefono">
+        <h3>Llamanos</h3>
+        <h6>0989518649</h6>
+        <h6>0982517153</h6>
+      </div>
+      <div class="wssp">
+        <h3>WhatsApp</h3>
+        <h6>https://walink.co/6ee4e1</h6>
+      </div>
+      <div class="ubicacion">
+        <h3>Visitanos en nuestras oficinas</h3>
+        <h6>Quero-Tungurahua</h6>
+      </div>
+      <div>
+        <h6>Pedro Fermin Cevallos y Bernardo Darquea</h6>
+      </div>
+      <div class="ubicacion">
+        <h6> </h6>
+      </div>
+    </div>
+    <div>
+      <form action="https://formsubmit.co/samantamegared@gmail.com" method="POST">
+        <div class="input-group">
+          <h2>Escribenos</h2>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Nombre">
+          <label for="phone">Telefono</label>
+          <input type="tel" name="phone" id="phone" placeholder="Telefono">
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="2" placeholder="Mensaje"></textarea>
+          <input class="btn" type="submit" value="Enviar">
+          <input type="hidden" name="_next" value="http://127.0.0.1:8081">
+          <input type="hidden" name="_captcha" value="false">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
 </body>
+
+<footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="./images/logo-pie-pagina.jpg" alt="Logo Megared">
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>Somos una empresa Quereña dedicada a brindar servicio de internet fijo.</p>
+      <p>Nuestro objetivo es brindar el mejor servicio de Internet al centro del Pais.</p>
+    </div>
+    <div class="box">
+      <h2>CONTACTANOS</h2>
+      <p>marco99_9@hotmail.com</p>
+      <p>0989518649</p>
+      <p>0982517153</p>
+      <div class="red-social">
+        <a href="https://www.facebook.com/ispgrupomegared" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+    <div class="box">
+      <figure>
+        <a href="https://www.arcotel.gob.ec/">
+          <img src="./images/arcotel.jpg" alt="Arcotel">
+        </a>
+      </figure>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&COPY;2023 <b>Grupo Megared</b> - Todos los Derechos Reservados</small>
+  </div>
+</footer>
 
 
 <script>
