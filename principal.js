@@ -90,7 +90,7 @@ app.get('/puntosdepago', (req,res)=>{
     res.status(200).sendFile(path.resolve(__dirname,'./html/puntosdepago.html'));
 });
 //Iniciamos el servidor
-var server = http.listen(8081,()=>{
+var server = http.listen(8082,()=>{
     console.log("Servidor corriendo en el puerto:",
     server.address().port);
 })

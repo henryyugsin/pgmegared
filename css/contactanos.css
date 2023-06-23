@@ -243,6 +243,9 @@ input::placeholder, textarea::placeholder{
     grid-gap:50px;
     padding: 45px 0px;
 }
+.box{
+    text-align: justify;
+}
 .pie-pagina .grupo-1  .box figure img{
     width: 250px;
 }

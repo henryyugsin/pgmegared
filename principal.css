@@ -391,6 +391,9 @@ section{
     width: 100%;
     background-color: #0a141d;
 }
+.box{
+    text-align: justify;
+}
 .pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
